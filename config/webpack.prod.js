@@ -11,7 +11,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
  *       "webpack --config ./config/webpack.prod.js"
  *
  *
- *
  * https://www.npmjs.com/package/mini-css-extract-plugin 提取css文件 ( 1、按文档位置放，名字加[hash:8]  2、option删 )
  *        3、全部改为url路径: ·output: {加 publicPath: '/'}
  *                           ·把filename的./都去掉，使用url地址
@@ -19,6 +18,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
  *        outputPath: 输出路径
  *        publicPath: 寻址路径
  *        filename: 跟在寻址路径后面
+ *        服务器运行: 安装:npm i serve -g  使用: serve -s build
  *
  * https://www.webpackjs.com/loaders/postcss-loader/ 加前缀 (兼容代码)( 1、选完整option那个，按文档放css-loader下面   2、加package.json配置)
  *

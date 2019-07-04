@@ -28,8 +28,8 @@ const webpack = require('webpack');
  *   https://www.webpackjs.com/plugins/html-webpack-plugin/ 以xx模板创建HTML文件，自动引入打包后的js (不能解析html的图片，结合html-loader使用),
  * ]
  *
- * devServer: {
- *      https://www.webpackjs.com/configuration/dev-server/ 开发中( 改resolve()，加open:tru，运行出错该路径 )
+ * devServer: { 从这开始改命令，上面是webpack运行，下面用webpack-dev-server
+ *      https://www.webpackjs.com/configuration/dev-server/ 开发中( 改resolve()，加open:true，运行出错改路径 )
  *      https://www.webpackjs.com/guides/hot-module-replacement/ 热模替换( 网页变化模块自动刷新 )(加入口文件index.html,不然html改变不自动刷新)
  * }
  *
@@ -121,7 +121,7 @@ module.exports = {
   ],
 
   /**
-   * // devServer开发中(命令webpack-dev-server) ( 开启特定端口号暴露build，自动监听文件，自动打开页面，但不会自动刷新页面模块 )
+   * // devServer开发中(命令"start": "webpack-dev-server") ( 开启特定端口号暴露build，自动监听文件，自动打开页面，但不会自动刷新页面模块 )
    * // 暴露了build，把localhost:4000/看做build文件夹，图片路径出错在url-loader改
    */
   devServer: {  // 开启一个端口号为3003，暴露build文件夹的服务器，执行命令webpack-dev-server"
