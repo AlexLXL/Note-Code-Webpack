@@ -1,0 +1,30 @@
+如果要执行webpack.develop.config.js,就运行webpack --config webpack.develop.config.js,
+当然也可以在package.json中设置
+
+{
+  "name": "01webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  //可以直接命令运行npm run develop 来执行webpack.develop.config.js文件
+    "develop": "webpack --config webpack.develop.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
+作者：悟空你又瘦了
+链接：https://www.jianshu.com/p/8134bbea0ef9
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
